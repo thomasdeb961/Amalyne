@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amalyne - Accueil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Ajoute ça dans ton fichier HTML, dans <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Pour la transition du carrousel */
+    .fade-enter {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    .fade-enter-active {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-exit {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .fade-exit-active {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#BC5D4B] min-h-screen">
+
+   <!-- NAVBAR -->
+  <header id="navbar" class="bg-[#BC5D4B] text-white fixed w-full z-10 shadow transition-opacity duration-300 opacity-100">
+
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold font-montserrat">Amalyne</h1>
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="index.html" class="mt-2 hover:underline">Accueil</a>
+        <a href="menu.html" class=" mt-2 hover:underline">Menu</a>
+        <a href="galerie.html" class="mt-2 hover:underline">Galerie</a>
+        <a href="contact.html" class="mt-2 hover:underline">Contact</a>
+        <a href="https://www.ubereats.com/" target="_blank" 
+     class="bg-white text-[#BC5D4B] px-4 py-1.5 rounded-full hover:bg-gray-90 transition duration-300">
+    Commander
+  </a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 font-semibold">
+      <a href="index.html" class="block pl-2">Accueil</a>
+      <a href="menu.html" class="block pl-2">Menu</a>
+      <a href="galerie.html" class="block pl-2">Galerie</a>
+      <a href="contact.html" class="block pb-2 pl-2">Contact</a>
+      <a href="https://www.ubereats.com/" target="_blank" 
+     class="bg-white text-[#BC5D4B] px-4 py-1 rounded-full hover:bg-gray-100 transition duration-300">
+    Commander
+  </a>
+    </div>
+  </header>
+<body class="bg-white text-gray-800">
+
+  <!-- Section Contact -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mt-10 text-[#BC5D4B] mb-6">Contact</h2>
+
+      <div class="flex flex-col lg:flex-row gap-12 items-center"data-aos="fade-right">
+        <!-- Image illustrative -->
+        <div class="w-full lg:w-1/2">
+          <img 
+            src="images/insta photo.png" 
+            alt="Intérieur du restaurant" 
+            class="rounded-xl shadow-lg w-full object-cover"
+          />
+        </div>
+
+        <!-- Nos Informations -->
+        <div class="w-full lg:w-1/2"data-aos="fade-left">
+          <h3 class="text-2xl font-bold mb-6 text-[#BC5D4B]">Nos informations</h3>
+          <div class="bg-amber-50 rounded-xl p-6 shadow-lg">
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-[#BC5D4B] p-3 rounded-full mr-4">
+                  <i class="fas fa-map-marker-alt text-amber-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Adresse</h4>
+                  <p class="text-gray-600">12 Rue de la Gastronomie, 75001 Paris</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-[#BC5D4B] p-3 rounded-full mr-4">
+                  <i class="fas fa-phone-alt text-amber-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Téléphone</h4>
+                  <p class="text-gray-600">01 23 45 67 89</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-[#BC5D4B] p-3 rounded-full mr-4">
+                  <i class="fas fa-envelope text-amber-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Email</h4>
+                  <p class="text-gray-600">contact@lepetitbistrot.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="bg-[#BC5D4B] p-3 rounded-full mr-4">
+                  <i class="fas fa-clock text-amber-600 text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-lg mb-1">Horaires</h4>
+                  <p class="text-gray-600 mb-1">Lundi - Vendredi: 11h30 - 14h30 & 19h - 23h</p>
+                  <p class="text-gray-600">Samedi - Dimanche: 12h - 15h & 19h - 00h</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="font-bold text-lg mb-4">Suivez-nous</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full text-gray-700 transition-colors">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full text-gray-700 transition-colors">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full text-gray-700 transition-colors">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-full text-gray-700 transition-colors">
+                  <i class="fab fa-tripadvisor"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte Google Maps en pleine largeur -->
+    <div class="mt-16 w-full"data-aos="fade-up">
+      <iframe 
+        title="Carte du restaurant Amalyne"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.6906050885297!2d3.0422492999999997!3d50.62938050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5edb3477a77%3A0x6f203707f8b3da6b!2sAMALYNE%20-%20DU%20FAIT%20MAISON%20LIBANAIS!5e0!3m2!1sfr!2sfr!4v1717000000000!5m2!1sfr!2sfr" 
+        width="80%" 
+        height="420" 
+        style="border:1;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-200px ml-auto mr-auto rounded-lg shadow-lg"
+      ></iframe>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-[#1a1d26] text-white pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Logo + description -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="text-2xl mr-2">🍽️</span>
+        <h2 class="text-xl font-bold">Amalyne</h2>
+      </div>
+      <p class="text-sm text-gray-300">
+        Une expérience libanaise authentique entre tradition et convivialité.
+      </p>
+    </div>
+
+    <!-- Liens rapides -->
+    <div>
+      <h3 class="font-bold text-white mb-3">Liens rapides</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="index.html" class="hover:underline">Accueil</a></li>
+        <li><a href="menu.html" class="hover:underline">Menu</a></li>
+        <li><a href="galerie.html" class="hover:underline">Galerie</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-bold text-white mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><span class="mr-2">📍</span> 45 Rue du Liban, Paris</li>
+        <li><span class="mr-2">📞</span> 01 23 45 67 89</li>
+        <li><span class="mr-2">✉️</span> contact@amalyne.fr</li>
+      </ul>
+    </div>
+
+    <!-- Horaires + réseaux -->
+    <div>
+      <h3 class="font-bold text-white mb-3">Horaires</h3>
+      <ul class="text-sm text-gray-300 mb-4">
+        <li class="flex justify-between">
+          <span>Lun – Ven</span><span>11h30 – 23h</span>
+        </li>
+        <li class="flex justify-between">
+          <span>Sam – Dim</span><span>12h – 00h</span>
+        </li>
+      </ul>
+      <div class="flex space-x-4">
+        <a href="#" class="bg-white hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+  <img src="images/facebook (2).svg" alt="Facebook" class="w-4 h-4" />
+</a>
+        <a href="#" class="bg-white hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+  <img src="images/instagram (3).svg" alt="instagram" class="w-4 h-4" />
+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barre du bas -->
+  <div class="border-t border-gray-600 mt-8 pt-4 px-4 text-sm text-gray-400 text-center md:text-left md:flex md:justify-between max-w-7xl mx-auto">
+    <p>&copy; 2025 Amalyne. Tous droits réservés.</p>
+    <div class="space-x-4 mt-2 md:mt-0">
+      <a href="#" class="hover:underline">Mentions légales</a>
+      <a href="#" class="hover:underline">Politique de confidentialité</a>
+      <a href="#" class="hover:underline">CGV</a>
+    </div>
+  </div>
+</footer>
+<!--navbar scrolling-->
+
+<script>
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.remove('opacity-100');
+      navbar.classList.add('opacity-75');
+    } else {
+      navbar.classList.remove('opacity-75');
+      navbar.classList.add('opacity-100');
+    }
+  });
+</script>
+<!-- Font Awesome pour les icônes -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <!-- SCRIPT -->
+  <script>
+    // Menu hamburger
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    });
+
+    // Carrousel
+    const images = document.querySelectorAll("#carousel img");
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.style.opacity = i === index ? '1' : '0';
+      });
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      nextImage();
+      resetInterval();
+    });
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      prevImage();
+      resetInterval();
+    });
+
+    showImage(currentIndex);
+
+    // Change automatique toutes les 5 secondes
+    let interval = setInterval(nextImage, 5000);
+
+    function resetInterval() {
+      clearInterval(interval);
+      interval = setInterval(nextImage, 5000);
+    }
+  </script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    offset: 120,
+  });
+</script>
+</body>
+</html>

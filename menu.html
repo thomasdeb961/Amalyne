@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amalyne - Menu</title>
+  <!-- ✅ Tailwind CDN v3 (fonctionne avec les classes bg-[#xxxxxx]) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Ajoute ça dans ton fichier HTML, dans <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<style>
+  .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+</style>
+</head>
+<body class="bg-[#BC5D4B] text-white min-h-screen">
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="bg-white text-[#BC5D4B] fixed w-full z-10 shadow transition-opacity duration-300 opacity-100">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold font-montserrat">Amalyne</h1>
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="index.html" class="mt-1 hover:underline">Accueil</a>
+        <a href="menu.html" class="mt-1 hover:underline">Menu</a>
+        <a href="galerie.html" class="mt-1 hover:underline">Galerie</a>
+        <a href="contact.html" class="mt-1 hover:underline">Contact</a>
+        <a href="https://www.ubereats.com/" target="_blank" 
+     class="bg-[#BC5D4B] text-white px-4 py-1.5 rounded-full  transition duration-300">
+    Commander
+  </a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none text-[#BC5D4B]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 font-semibold">
+      <a href="index.html" class="ml-3 block">Accueil</a>
+      <a href="menu.html" class="ml-3 block">Menu</a>
+      <a href="galerie.html" class="ml-3 block">Galerie</a>
+      <a href="contact.html" class="ml-3 pb-2 block">Contact</a>
+      <a href="https://www.ubereats.com/" target="_blank" 
+     class="bg-[#BC5D4B] text-white px-4 py-1 rounded-full transition duration-300">
+    Commander
+  </a>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="pt-28 pb-16 px-4 max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-10">Nos Menus</h2>
+
+    <!-- Menu sandwich + boisson -->
+    <!-- Menus Sandwich + Boisson -->
+<section class="mb-12" data-aos="fade-down">
+  <h3 class="text-2xl font-semibold mb-4">Menus Sandwich + Boisson</h3>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="bg-white text-[#BC5D4B] p-4 rounded shadow">
+      <img src="images/uber.jpeg" alt="Menu Shawarma Poulet" class="w-full h-48 object-cover rounded mb-4">
+      <h4 class="text-lg font-bold">Menu Shawarma Poulet</h4>
+      <p class="text-sm mb-2">Sandwich + boisson au choix</p>
+      <a href="https://www.ubereats.com" target="_blank"
+   class="inline-block bg-[#BC5D4B] text-white px-4 py-2 rounded mt-2 transition duration-300 transform hover:scale-105 hover:bg-[#a3493b] shadow hover:shadow-md">
+  Commander
+</a>
+
+    </div>
+    <div class="bg-white text-[#BC5D4B] p-4 rounded shadow">
+      <img src="images/320768917_482553570688577_8947995635751195950_n.jpg" alt="Menu Falafel" class="w-full h-48 object-cover rounded mb-4">
+      <h4 class="text-lg font-bold">Menu Falafel</h4>
+      <p class="text-sm mb-2">Sandwich végétarien + boisson</p>
+      <a href="https://www.ubereats.com" target="_blank"
+   class="inline-block bg-[#BC5D4B] text-white px-4 py-2 rounded mt-2 transition duration-300 transform hover:scale-105 hover:bg-[#a3493b] shadow hover:shadow-md">
+  Commander
+</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Sandwichs seuls -->
+<section data-aos="fade-right">
+  <h3 class="text-2xl font-semibold mb-4">Sandwichs</h3>
+  <div class="grid gap-6 md:grid-cols-2">
+    <div class="bg-white text-[#BC5D4B] p-4 rounded shadow">
+      <img src="images/Capture d'écran insta.png" alt="Sandwich Kebab" class="w-full h-48 object-cover rounded mb-4">
+      <h4 class="text-lg font-bold">Sandwich Kebab</h4>
+      <p class="text-sm mb-2">Pain libanais garni de viande grillée</p>
+      <a href="https://www.ubereats.com" target="_blank"
+   class="inline-block bg-[#BC5D4B] text-white px-4 py-2 rounded mt-2 transition duration-300 transform hover:scale-105 hover:bg-[#a3493b] shadow hover:shadow-md">
+  Commander
+</a>
+
+    </div>
+    <div class="bg-white text-[#BC5D4B] p-4 rounded shadow">
+      <img src="images/capture.png" alt="Sandwich Halloumi" class="w-full h-48 object-cover rounded mb-4">
+      <h4 class="text-lg font-bold">Sandwich Halloumi</h4>
+      <p class="text-sm mb-2">Fromage libanais grillé dans pain chaud</p>
+      <a href="https://www.ubereats.com" target="_blank"
+   class="inline-block bg-[#BC5D4B] text-white px-4 py-2 rounded mt-2 transition duration-300 transform hover:scale-105 hover:bg-[#a3493b] shadow hover:shadow-md">
+  Commander
+</a>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- SCRIPT du menu responsive -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+<footer class="bg-[#1a1d26] text-white pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Logo + description -->
+    <div>
+      <div class="flex items-center mb-3">
+        <span class="text-2xl mr-2">🍽️</span>
+        <h2 class="text-xl font-bold">Amalyne</h2>
+      </div>
+      <p class="text-sm text-gray-300">
+        Une expérience libanaise authentique entre tradition et convivialité.
+      </p>
+    </div>
+
+    <!-- Liens rapides -->
+    <div>
+      <h3 class="font-bold text-white mb-3">Liens rapides</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><a href="index.html" class="hover:underline">Accueil</a></li>
+        <li><a href="menu.html" class="hover:underline">Menu</a></li>
+        <li><a href="galerie.html" class="hover:underline">Galerie</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="font-bold text-white mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li><span class="mr-2">📍</span> 45 Rue du Liban, Paris</li>
+        <li><span class="mr-2">📞</span> 01 23 45 67 89</li>
+        <li><span class="mr-2">✉️</span> contact@amalyne.fr</li>
+      </ul>
+    </div>
+
+    <!-- Horaires + réseaux -->
+    <div>
+      <h3 class="font-bold text-white mb-3">Horaires</h3>
+      <ul class="text-sm text-gray-300 mb-4">
+        <li class="flex justify-between">
+          <span>Lun – Ven</span><span>11h30 – 23h</span>
+        </li>
+        <li class="flex justify-between">
+          <span>Sam – Dim</span><span>12h – 00h</span>
+        </li>
+      </ul>
+      <div class="flex space-x-4">
+        <a href="#" class="bg-white hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+  <img src="images/facebook (2).svg" alt="Facebook" class="w-4 h-4" />
+</a>
+        <a href="#" class="bg-white hover:bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center">
+  <img src="images/instagram (3).svg" alt="instagram" class="w-4 h-4" />
+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barre du bas -->
+  <div class="border-t border-gray-600 mt-8 pt-4 px-4 text-sm text-gray-400 text-center md:text-left md:flex md:justify-between max-w-7xl mx-auto">
+    <p>&copy; 2025 Amalyne. Tous droits réservés.</p>
+    <div class="space-x-4 mt-2 md:mt-0">
+      <a href="#" class="hover:underline">Mentions légales</a>
+      <a href="#" class="hover:underline">Politique de confidentialité</a>
+      <a href="#" class="hover:underline">CGV</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.remove('opacity-100');
+      navbar.classList.add('opacity-75');
+    } else {
+      navbar.classList.remove('opacity-75');
+      navbar.classList.add('opacity-100');
+    }
+  });
+</script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    offset: 120,
+  });
+</script>
+</body>
+</html>
